@@ -1,0 +1,240 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+.btn-primary {
+  border-radius: 40px;
+  color: #fff;
+  font-size: 0.8rem;
+  background: #e02c6d;
+  padding: 10px 15px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  margin-top: 13px;
+}
+/* header styles */
+header {
+  background: #fff;
+  padding: 30px 90px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h3 {
+  color: #3a3a3a;
+  font-size: 30px;
+  font-weight: 700;
+}
+nav > ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+  margin-right: 25px;
+}
+nav a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* banner styles */
+.banner {
+  display: flex;
+  margin: 30px auto;
+
+}
+.banner-content h3 {
+  color: #3a3a3a;
+  font-size: 43px;
+  font-weight: 700;
+}
+.banner-content p {
+  color: #3a3a3a;
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: -26px;
+}
+.banner img {
+  background: url(influencer-gear-main/images/Circle\ design.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  width: 100%;
+}
+/* main styles */
+
+/* sponser section */
+.sponsors {
+  padding: 30px 90px;
+}
+.sponsors-img-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid #f7f0ff;
+}
+.sponsors-img-container img {
+  width: 63px;
+  height: 60px;
+}
+/* items section styles */
+.items {
+  max-width: 950px;
+  margin: 40px auto;
+}
+.items h3 {
+  text-align: center;
+  color: #3a3a3a;
+  font-size: 28px;
+  font-weight: 600;
+}
+.items h5 {
+  color: rgba(224, 44, 109, 0.87);
+  font-size: 14px;
+  font-weight: 700;
+  text-align: right;
+}
+.items-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+}
+.card h4 {
+  color: #18191f;
+  font-size: 26px;
+  font-weight: 500;
+}
+.card h5 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 20px;
+  margin-top: -28px;
+}
+.card p {
+  color: #787885;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.252px;
+  margin-top: -27px;
+}
+.card img {
+  border-radius: 5px;
+}
+/* features styles */
+.features {
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  margin: 80px auto;
+}
+.features-content {
+  margin-left: 40px;
+}
+.features-content h3 {
+  color: #0a0826;
+  font-size: 35px;
+  font-weight: 700;
+}
+.features-content p {
+  color: #6c6c6c;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: -24px;
+}
+.features-btn {
+  color: #fff;
+  font-size: 0.8rem;
+  background: #e02c6d;
+  padding: 10px 15px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  margin-top: 6px;
+}
+/* footer-section */
+.footer-section {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+.footer-section h4 {
+  font-size: 23px;
+  font-weight: 700;
+  padding-top: 30px;
+}
+.footer-section p {
+  color: #d9dbe1;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: -26px;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  margin-left: -25px;
+}
+li {
+  list-style: none;
+  margin-right: 25px;
+  font-size: 21px;
+  padding-bottom: 20px;
+}
+.hide {
+  display: none;
+}
+/* Responsive media quairy */
+@media screen and (max-width: 576px) {
+  header {
+    padding: 30px 0px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav li {
+    margin-right: 10px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-img {
+    width: 100%;
+  }
+  .sponsors {
+    padding: 10px 0px;
+  }
+  .sponsors-img-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .sponsors-img- img {
+    width: 125px;
+  }
+  .items-card {
+    grid-template-columns: 1fr;
+  }
+  .features-img img{
+    width: 100%;
+  }
+  .features {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .items-card {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .banner-img{
+        margin-top: 40px;
+      }
+}
